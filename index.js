@@ -1,2 +1,3 @@
 // index.js
-"HELLO ITS MY FIRST COMMIT"
+
+alert("HELLO ITS MY FIRST COMMIT");
