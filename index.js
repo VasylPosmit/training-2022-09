@@ -1,7 +1,6 @@
 // index.js
-
-
-alert("HELLO ITS MY FIRST COMMIT");
+// Hi this is Volodymyr ___
 
 //pull request
 
+alert("HELLO ITS MY FIRST COMMIT");
