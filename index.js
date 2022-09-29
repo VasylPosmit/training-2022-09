@@ -2,6 +2,7 @@
 // program for a simple calculator
 let result;
 
+
 // user input
 const operator = prompt('Enter operator ( either +, -, * or / ) and remember I am lazy ');
 
@@ -46,3 +47,4 @@ switch(operator) {
         console.log('Invalid operator');
         break;
 }
+
