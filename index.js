@@ -11,7 +11,7 @@ function filter(res) {
     } else {
       if (res % 1 === 0) {
         let resF = res.toFixed();
-        console.log(resF);
+        console.log("I don't know... Must be something around "+resF);
       }
     }
   }
