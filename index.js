@@ -1,1 +1,2 @@
 // index.js
+"HELLO ITS MY FIRST COMMIT"
