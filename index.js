@@ -1,6 +1,6 @@
 // index.js
-Volodymyr
 // Hi this is Volodymyr ___
 
 //pull request
-main
+
+alert("HELLO ITS MY FIRST COMMIT");
