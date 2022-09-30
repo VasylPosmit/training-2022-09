@@ -1,10 +1,12 @@
 // index.js
+
 // program for a simple calculator
 let result;
 
 
 // user input
 const operator = prompt('Enter operator ( either +, -, * or / ) and remember I am lazy ');
+
 
 // user numbers
 const number1 = parseFloat(prompt('Enter first number: '));
@@ -58,3 +60,4 @@ function multiNums(...nums){
     return res
 }
 
+alert("HELLO ITS MY FIRST COMMIT");
