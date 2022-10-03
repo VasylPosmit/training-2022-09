@@ -62,7 +62,6 @@ function multiNums(...nums){
 
 //alert("HELLO ITS MY FIRST COMMIT");
 
-task-11-fibonacci
 const number = parseInt(prompt('Enter the number of terms: '));
 let n1 = 0, n2 = 1, nextTerm;
 
