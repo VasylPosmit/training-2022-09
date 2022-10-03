@@ -1,3 +1,4 @@
+// index.js
 
 // program for a simple calculator
 let result;
@@ -59,7 +60,7 @@ function multiNums(...nums){
     return res
 }
 
-
+//Fibonacci
 const number = parseInt(prompt('Enter the number of terms: '));
 let n1 = 0, n2 = 1, nextTerm;
 
@@ -70,4 +71,25 @@ function fibonacci (number){for (let i = 1; i <= number; i++) {
     n1 = n2;
     n2 = nextTerm;
 }}
+
+//Filter lazy
+
+function filter(res) {
+  if (isNaN(res)) {
+    console.log("Just numbers");
+  } else {
+    if (res >= 0) {
+      if (res > 1000) {
+        console.log("That's too much for me, sorry");
+      } else {
+        if (res % 1 === 0) {
+          let resF = res.toFixed();
+          console.log("I don't know... Must be something around " + resF);
+        }
+      }
+    } else {
+      console.log("That number is too slow, sorry");
+    }
+  }
+}
 
