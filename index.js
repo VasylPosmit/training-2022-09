@@ -16,7 +16,7 @@ function filter(res) {
         }
       }
     } else {
-      console.log("That's too slow, sorry");
+      console.log("That number is too slow, sorry");
     }
   }
 }
