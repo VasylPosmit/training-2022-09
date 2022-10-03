@@ -1,4 +1,4 @@
-// index.js
+
 // program for a simple calculator
 let result;
 
