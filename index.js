@@ -1,5 +1,6 @@
 // index.js
 
+
 alert("HELLO ITS MY FIRST COMMIT");
 
 function filter(res) {
@@ -20,5 +21,3 @@ function filter(res) {
     }
   }
 }
-
-//pull request
