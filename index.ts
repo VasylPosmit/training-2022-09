@@ -21,6 +21,6 @@ export function divNums(...nums: any){
 
 export function multiNums(...nums: any){
     const res = nums.reduce((num1: number, num2: number) => num1 * num2);
-    return res;
+    return res ;
 }
 
