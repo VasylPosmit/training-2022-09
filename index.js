@@ -99,7 +99,7 @@ function filter(res) {
       } else {
         if (res % 1 === 0) {
           let resF = res.toFixed();
-          console.log(resF);
+          console.log("something around "  +resF);
         }  if (!Number.isInteger(res)) {
           return 'Only integers!';
         }
