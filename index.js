@@ -1,9 +1,6 @@
 // index.js
-
-
 // program for a simple calculator
 let result;
-
 
 // user input
 const operator = prompt('Enter operator ( either +, -, * or / ) and remember I am lazy ');
@@ -50,9 +47,7 @@ switch(operator) {
 
 function addNums(...nums){
     let res = nums.reduce((num1, num2) => num1 + num2)
-    return(filter(res),res)
-
-    
+    return(filter(res),res)   
 }
 
 function subNums(...nums){
@@ -70,7 +65,7 @@ function multiNums(...nums){
     return(filter(res),res)
 }
 
-
+//Fibonacci number 
 
 function fib(val) {
   if ( val < 1 ) { return "Input must be a number greater than 0.";
