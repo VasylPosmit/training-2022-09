@@ -59,6 +59,7 @@ function multiNums(...nums){
     return(filter(res),res)
 }
 
+
 //Fibonacci number 
 
 function fib(val) {
@@ -70,7 +71,7 @@ function fib(val) {
   } else if ( val >= 3 ) {
       return  fib(val-1)+fib(val-2);
   } 
-}
+
 
 //Filter lazy
 
@@ -93,6 +94,4 @@ function filter(res) {
     }
   }
 }
-
-   
 
