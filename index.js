@@ -90,8 +90,8 @@ function factorial(n){
 //Filter lazy
 
 function filter(res) {
-  if (isNaN(res)) {
-    console.log("Just numbers");
+  if (!Number.isInteger(res)) {
+    return 'Only integers!';
   } else {
     if (res >= 0) {
       if (res > 1000) {
@@ -99,10 +99,8 @@ function filter(res) {
       } else {
         if (res % 1 === 0) {
           let resF = res.toFixed();
-          console.log("something around "  +resF);
-        }  if (!Number.isInteger(res)) {
-          return 'Only integers!';
-        }
+          console.log("something around " +resF);
+        }  
       }
     } else {
       console.log("That number is too low, sorry");
