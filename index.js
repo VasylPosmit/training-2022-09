@@ -13,28 +13,22 @@ const number2 = parseFloat(prompt('Enter second number: '));
 switch(operator) {
     case '+':
          res = number1 + number2;
-         filter(res);
-        // console.log(`${number1} + ${number2} = ${res}`);
-        console.log(res)
-        
+         filter(res);    
         break;
 
     case '-':
          res = number1 - number2;
          filter(res);
-         console.log(res)
         break;
 
     case '*':
          res = number1 * number2;
          filter(res);
-         console.log(res)
         break;
 
     case '/':
          res = number1 / number2;
          filter(res);
-         console.log(res)
         break;
        
       
@@ -68,14 +62,14 @@ function multiNums(...nums){
 //Fibonacci number 
 
 function fib(val) {
-  if ( val < 1 ) { return "Input must be a number greater than 0.";
+  if ( val < 1 || val >17) { return "that will be to much or to low for me I'm lazy";
   } else if ( val == 1 ) {
     return 0; 
   } else if ( val < 3 ) {
       return 1;
   } else if ( val >= 3 ) {
-      return fib(val-1)+fib(val-2);
-  }
+      return  fib(val-1)+fib(val-2);
+  } 
 }
 
 //Filter lazy
@@ -90,7 +84,7 @@ function filter(res) {
       } else {
         if (res % 1 === 0) {
           let resF = res.toFixed();
-          console.log("I don't know... Must be something around " + resF);
+          console.log(resF);
 
         } 
       }
