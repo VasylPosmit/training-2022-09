@@ -1,10 +1,10 @@
-const number = parseInt(prompt('Enter the number of terms: '));
-let n1 = 0, n2 = 1, nextTerm;
-
-console.log('Fibonacci Series:');
-function fibonacci (number){for (let i = 1; i <= number; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextTerm;
-}}
+function fib(val) {
+    if ( val < 1 ) { return "Input must be a number greater than 0.";
+    } else if ( val == 1 ) {
+        return 0; 
+    } else if ( val < 3 ) {
+            return 1;
+    } else if ( val >= 3 ) {
+            return fib(val-1)+fib(val-2);
+    }
+}
