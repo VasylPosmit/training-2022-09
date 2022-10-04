@@ -72,7 +72,7 @@ function fib(val) {
   } 
 }
 
-//Factorial in tgesting
+//Factorial in tgesting 
 
 function factorial(n){
   let answer = 1;
