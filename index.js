@@ -100,8 +100,9 @@ function filter(res) {
         if (res % 1 === 0) {
           let resF = res.toFixed();
           console.log(resF);
-
-        } 
+        }  if (!Number.isInteger(res)) {
+          return 'Only integers!';
+        }
       }
     } else {
       console.log("That number is too low, sorry");
