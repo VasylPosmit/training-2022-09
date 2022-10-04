@@ -1,5 +1,4 @@
 // index.js
-
 // program for a simple calculator
 let result;
 
@@ -32,70 +31,70 @@ const number1 = parseFloat(prompt("Enter first number: "));
 const number2 = parseFloat(prompt("Enter second number: "));
 
 
+switch(operator) {
+    case '+':
+         res = number1 + number2;
+         filter(res);    
+        break;
 
-switch (operator) {
-  case "+":
-    result = number1 + number2;
-    console.log(`${number1} + ${number2} = ${result}`);
-    break;
+    case '-':
+         res = number1 - number2;
+         filter(res);
+        break;
 
-  case "-":
-    result = number1 - number2;
-    console.log(`${number1} - ${number2} = ${result}`);
-    break;
+    case '*':
+         res = number1 * number2;
+         filter(res);
+        break;
 
-  case "*":
-    result = number1 * number2;
-    console.log(`${number1} * ${number2} = ${result}`);
-    break;
+    case '/':
+         res = number1 / number2;
+         filter(res);
+        break;
+       
+      
+    default:
+        console.log('Invalid operator');
+        break;
 
-  case "/":
-    result = number1 / number2;
-    console.log(`${number1} / ${number2} = ${result}`);
-    break;
-
-  default:
-    console.log("Invalid operator");
-    break;
 }
 
 //calculator from console only with functions
 
-function addNums(...nums) {
-  let res = nums.reduce((num1, num2) => num1 + num2);
-  return res;
+
+function addNums(...nums){
+    let res = nums.reduce((num1, num2) => num1 + num2)
+    return(filter(res),res)   
 }
 
-function subNums(...nums) {
-  let res = nums.reduce((num1, num2) => num1 - num2);
-  return res;
+function subNums(...nums){
+    let res = nums.reduce((num1, num2) => num1 - num2)
+    return(filter(res),res)
 }
 
-function divNums(...nums) {
-  let res = nums.reduce((num1, num2) => num1 / num2);
-  return res;
+function divNums(...nums){
+    let res = nums.reduce((num1, num2) => num1 / num2)
+    return(filter(res),res)
 }
 
-function multiNums(...nums) {
-  let res = nums.reduce((num1, num2) => num1 * num2);
-  return res;
+function multiNums(...nums){
+    let res = nums.reduce((num1, num2) => num1 * num2)
+    return(filter(res),res)
 }
 
-//Fibonacci
-const number = parseInt(prompt("Enter the number of terms: "));
-let n1 = 0,
-  n2 = 1,
-  nextTerm;
 
-console.log("Fibonacci Series:");
-function fibonacci(number) {
-  for (let i = 1; i <= number; i++) {
-    console.log(n1);
-    nextTerm = n1 + n2;
-    n1 = n2;
-    n2 = nextTerm;
-  }
-}
+//Fibonacci number 
+
+function fib(val) {
+  if ( val < 1 || val >17) { return "that will be to much or to low for me I'm lazy";
+  } else if ( val == 1 ) {
+    return 0; 
+  } else if ( val < 3 ) {
+      return 1;
+  } else if ( val >= 3 ) {
+      return  fib(val-1)+fib(val-2);
+  } }
+
 
 //Filter lazy
 
@@ -109,11 +108,11 @@ function filter(res, min, max) {
       } else {
         if (res % 1 === 0) {
           let resF = res.toFixed();
-          console.log("I don't know... Must be something around " + resF);
-        }
+          console.log(resF);
+
+        } 
       }
     } else {
       console.log("That number is too low, sorry");
     }
-  }
-}
+  }}
