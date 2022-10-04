@@ -79,8 +79,6 @@ function fib(n) {
   }
 }
 
-
-
 //Filter lazy
 
 function filter(res) {
