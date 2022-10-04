@@ -3,12 +3,33 @@
 let result;
 
 // user input
-const operator = prompt('Enter operator ( either +, -, * or / ) and remember I am lazy ');
+const lazyness = parseFloat(prompt("Should I be lazy today? (yes/no) "));
 
+switch (lazyness) {
+  case "yes":
+    //if its lazy, it will use the filter
+    const min = parseFloat(prompt("Minimum? "));
+    const max = parseFloat(prompt("I see... And the maximum?"));
+
+    filter(res, min, max); //?
+    
+    break;
+  case "no":
+    console.log("As you wish... You'll make me work hard");
+    //we could just put the basic functions/fibonacci into a function and call it here
+    
+
+    break;
+}
+
+const operator = prompt(
+  "Enter operator ( either +, -, * or / ) and remember I am lazy "
+);
 
 // user numbers
-const number1 = parseFloat(prompt('Enter first number: '));
-const number2 = parseFloat(prompt('Enter second number: '));
+const number1 = parseFloat(prompt("Enter first number: "));
+const number2 = parseFloat(prompt("Enter second number: "));
+
 
 switch(operator) {
     case '+':
@@ -35,9 +56,11 @@ switch(operator) {
     default:
         console.log('Invalid operator');
         break;
+
 }
 
 //calculator from console only with functions
+
 
 function addNums(...nums){
     let res = nums.reduce((num1, num2) => num1 + num2)
@@ -70,17 +93,17 @@ function fib(val) {
       return 1;
   } else if ( val >= 3 ) {
       return  fib(val-1)+fib(val-2);
-  } 
+  } }
 
 
 //Filter lazy
 
-function filter(res) {
+function filter(res, min, max) {
   if (isNaN(res)) {
     console.log("Just numbers");
   } else {
-    if (res >= 0) {
-      if (res > 1000) {
+    if (res >= min) {
+      if (res > max) {
         console.log("That's too much for me, sorry");
       } else {
         if (res % 1 === 0) {
@@ -92,6 +115,4 @@ function filter(res) {
     } else {
       console.log("That number is too low, sorry");
     }
-  }
-}
-
+  }}
