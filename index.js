@@ -1,6 +1,5 @@
 // index.js
 
-// index.js
 
 // program for a simple calculator
 let result;
@@ -80,9 +79,6 @@ function fib(n) {
   }
 }
 
-<<<<<<< HEAD
-=======
-
 
 //Fibonacci
 const number = parseInt(prompt('Enter the number of terms: '));
@@ -96,8 +92,6 @@ function fibonacci (number){for (let i = 1; i <= number; i++) {
     n2 = nextTerm;
 }}
 
-
->>>>>>> 25898d44938b20bac3d6d18aa7f5796260a0ba45
 //Filter lazy
 
 function filter(res) {
